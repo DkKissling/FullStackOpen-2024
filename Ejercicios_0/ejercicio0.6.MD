@@ -1,3 +1,5 @@
+```mermaid
+
 sequenceDiagram
     participant user as User
     participant browser as Browser
