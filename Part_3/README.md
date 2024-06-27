@@ -18,8 +18,66 @@ The backend is deployed at [https://phonebook-backend-fragrant-paper-2482.fly.de
 ## Technologies Used
 
 - **Backend**: Node.js, Express.js, MongoDB Atlas for database storage.
-- **Frontend**: React for the user interface.
+- **Frontend**: HTML, CSS, JavaScript for the user interface.
 - **Deployment**: Hosted on Fly.io for backend deployment online.
+
+## Setup Instructions
+
+To set up and run this project locally, follow these steps:
+
+### Prerequisites
+
+- Node.js and npm installed on your local machine
+- MongoDB Atlas account or local MongoDB server
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/phonebook.git
+   cd phonebook
+   ```
+
+2. **Install dependencies for both backend and frontend:**
+
+   ```bash
+   # Navigate to backend directory and install dependencies
+   cd backend
+   npm install
+   
+   # Navigate to frontend directory and install dependencies
+   cd ../frontend
+   npm install
+   ```
+
+3. **Set up environment variables:**
+
+   Create a `.env` file in the backend directory and add your MongoDB connection string and any other necessary environment variables:
+
+   ```plaintext
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=3001
+   ```
+
+4. **Run the application:**
+
+   ```bash
+   # Start the backend server
+   cd backend
+   npm run dev
+
+   # Start the frontend development server (in a separate terminal)
+   cd ../frontend
+   npm start
+   ```
+
+   The backend server should be running at `http://localhost:3001` and the frontend at `http://localhost:3000`.
+
+### Additional Notes
+
+- The `.gitignore` file has been configured to exclude unnecessary files and directories such as `node_modules`, logs, environment files, and other local configurations.
+- Ensure that your MongoDB database is properly configured and accessible from your local machine or deployment environment.
 
 ## Completed Exercises
 
